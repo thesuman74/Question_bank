@@ -40,9 +40,7 @@
           <div class="checkbox">
             <label><input type="checkbox" class="mt-3"> Remember me</label>
           </div> 
-	        <div class="checkbox">
-            <label><input type="checkbox" class="mt-3"> fuck you</label>
-          </div>
+
 
           <button type="submit" class="btn btn-default btn-success mt-3">Submit</button>
           <a href="login.php" class="btn btn-success mt-3" role="button">Check form</a>
