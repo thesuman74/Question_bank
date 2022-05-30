@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	    
+
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7 px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: poppins, sans-serif;
+}
+
+.navbar{
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 15px 0;
+	z-index: 10;
+
+
+}
+.max-width{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+
+}
+.menu li  {
+	list-style: none;
+	display: inline;
+
+}
+
+.navbar .menu li a {
+	display: inline;
+	padding: 0px 50px;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	transition: color 0.3s ;
+}
+
+.navbar .logo strong {
+	color: crimson;
+}
+.navbar .menu li a:hover{
+	color: crimson;
+}
+
+.logo a {
+	font-size: 40px;
+    font-weight: 600;
+    color: white;
+	padding-left:20px ;
+}
+
+.home{
+	background: green;
+    background-image: url(img/model.jpg) ;
+    width: auto;
+    height: 100vh;
+    min-width: 500px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.home .max-width {
+	position: absolute;
+	top: 35%;
+	left: 7%;
+}
+
+.home-content .text-1 {
+	font-size: 30px;
+	color: white;
+	
+}
+.home-content .text-2 {
+	font-size: 60px;
+	color: white;
+	
+}
+.home-content .text-3{
+	font-size: 30px;
+	color: white;
+	
+}
+.home-content .text-3 strong{
+	font-size: 35px;
+	color: crimson;
+	
+}
+
+.home .button a {
+	color: white;	
+	font-size: 25px;
+	width: 200px;
+	height: 35px;
+	border-radius: 7px;
+	text-align: center;
+	background: crimson;
+	display: inline-block;
+	margin-top: 10px;
+	border: 2px solid crimson;
+	transition: all 0.5s ease-out;
+}
+
+.home .home-content .button a:hover{
+	color: white;
+	background: none;
+}
+
+
+@media screen and (max-width: 950px) {
+  ul.menu li a{
+    font-size: 13px;
+    padding: 5px 20px;
+  }
+
+
+ @media screen and (max-width: 650px) {
+  ul.menu li a{
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  @media screen and (max-width: 600px) {
+  ul.menu li a{
+    display: none;
+  }
