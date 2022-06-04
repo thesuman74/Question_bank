@@ -1,0 +1,12 @@
+.sidebar{
+	width: 14rem;
+	height: 100%;
+	position: sticky;
+	float: left;
+	background-color: #0D6DE3;
+}
+
+img{
+	width: 18rem;
+	height: 18rem ;
+}
