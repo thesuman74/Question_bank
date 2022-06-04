@@ -32,6 +32,9 @@ $con=mysqli_connect('localhost','root','','youtube');
         <div class="col-lg-4 col-md-2 col-12 mb-4 shadow p-3 mr-5 bg-white rounded">
           <img src="images/<?php echo $re['photo'];?>.jpg" class="img-fluid">
         </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4 shadow p-3 mr-5 bg-white rounded">
+          <img src="images/<?php echo $re['photo'];?>.jpg" class="img-fluid">
+        </div>
         
 
        
