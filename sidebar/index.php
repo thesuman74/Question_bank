@@ -5,8 +5,7 @@ $country = "SELECT * FROM countries";
 $county_qry = mysqli_query($conn, $country);
 
 
-
-include 'include_common/header.php' ?>
+     ?>
 
 <div class="d-flex justify-content-center align-items-center">
     <div class="container my-5">
