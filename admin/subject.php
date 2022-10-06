@@ -14,7 +14,7 @@ include('includes/links/links.php');
 include('connection.inc.php');
 
 
-$selectquery = "SELECT * FROM countries ";
+$selectquery = "SELECT * FROM courses ";
 
 
 
@@ -32,7 +32,7 @@ $showdata = mysqli_query($conn, $selectquery);
     <!-- ======= About Section ======= -->
 
     <h1 class="text-center text-capitalize pt-1 display-3 font-weight-normal">Subjects</h1>
-    <hr class="w-75 mx-auto pt-1">
+    <hr class="w-75 mx-auto ">
 
 
     <div class="bg-white container mt-5 " style="width:auto; height: 500px;;">
@@ -50,7 +50,7 @@ $showdata = mysqli_query($conn, $selectquery);
         <?php
         include 'connection.inc.php';
 
-        $country = "SELECT * FROM countries";
+        $country = "SELECT * FROM courses";
         $county_qry = mysqli_query($conn, $country);
 
 
@@ -61,6 +61,7 @@ $showdata = mysqli_query($conn, $selectquery);
             <div class="container my-5">
                 <div class="card mx-auto">
                     <div class="card-body">
+                        <form action="add.php" method="POST">
                         <div class="input-group mb-3">
                             <select class="form-select" id="country" name="country">
                                 <option selected disabled>Select course</option>
@@ -70,21 +71,22 @@ $showdata = mysqli_query($conn, $selectquery);
                             </select>
                         </div>
                         <div class="input-group mb-3">
-                            <select class="form-select" id="state" name='state'>
+                            <select class="form-select" id="state" name='semester'>
                                 <option selected disabled>Select Semester</option>
                             </select>
                         </div>
                         <div class="input-group">
-                            <input type="text" name="link" class="form-control" placeholder="Enter Subject name">
+                            <input type="text" name="subject" class="form-control" placeholder="Enter Subject name">
                         </div>
 
+                      <input type="submit" name="add_subject" class="btn btn-primary mt-4" > 
 
-
+                        </form>
 
                     </div>
 
                 </div>
-                <a href="update/update_about.php" class="btn btn-primary mt-4" role="button">Update</a>
+
             </div>
         </div>
 

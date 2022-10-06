@@ -39,7 +39,7 @@ $re = mysqli_fetch_array($showdata);
 <?php
 include 'connection.inc.php';
 
-$country = "SELECT * FROM countries";
+$country = "SELECT * FROM courses";
 $county_qry = mysqli_query($conn, $country);
 
 

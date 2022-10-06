@@ -8,7 +8,7 @@ if (isset($_POST['add_courses'])) {
 
   // to check for duplicate course 
 
-  $check_course = "SELECT name from countries where name = '$course'";
+  $check_course = "SELECT name from courses where name = '$course'";
   $check_query = mysqli_query($conn, $check_course);
   $check_result = mysqli_fetch_array($check_query);
 
@@ -27,11 +27,11 @@ if ($course == $check_result['name']) {
 
     if ($semester == 6) {
       // echo $semester;
-      $insert_course = "INSERT INTO countries (name) values('$course')";
+      $insert_course = "INSERT INTO courses (name) values('$course')";
       $course_query = mysqli_query($conn, $insert_course);
 
       // for selecting course name 
-      $select_course = "select id from countries where name = '$course'";
+      $select_course = "select id from courses where name = '$course'";
       $course_query = mysqli_query($conn, $select_course);
       $course_result = mysqli_fetch_array($course_query);
 
@@ -70,11 +70,11 @@ if ($course == $check_result['name']) {
 
       echo $course;
       // echo $semester;
-      $insert_course = "INSERT INTO countries (name) values('$course')";
+      $insert_course = "INSERT INTO courses (name) values('$course')";
       $course_query = mysqli_query($conn, $insert_course);
 
       // for selecting course name 
-      $select_course = "select id from countries where name = '$course'";
+      $select_course = "select id from courses where name = '$course'";
       $course_query = mysqli_query($conn, $select_course);
       $course_result = mysqli_fetch_array($course_query);
 
@@ -96,7 +96,7 @@ if ($course == $check_result['name']) {
       ?>
         <script type="text/javascript">
           alert("course added with 8 semester");
-          window.location.href = '  ';
+          window.location.href = 'courses.php';
         </script>
 
       <?php
@@ -112,9 +112,6 @@ if ($course == $check_result['name']) {
     }
   }
 }
-
-
-
 
 // end of add course 
 
@@ -132,7 +129,7 @@ if (isset($_POST['data_entry'])) {
 
 
   // for selecting course name 
-  $select_course = "select name from countries where id = '$course_id'";
+  $select_course = "select name from courses where id = '$course_id'";
   $course_query = mysqli_query($conn, $select_course);
   $course_result = mysqli_fetch_array($course_query, MYSQLI_ASSOC);
 
@@ -179,4 +176,58 @@ if (isset($_POST['data_entry'])) {
 <?php
   }
 }
+
+
+// end of data entry 
+
+
+
+
+
+// start of subject entry 
+
+if (isset($_POST['add_subject'])) {
+  
+  $semester_id = $_POST['semester'];
+  $subject = $_POST['subject'];
+
+
+  // echo $semester_id;
+  // echo $subject;
+
+$insert = "INSERT INTO subject (name, state_id) values('$subject','$semester_id')";
+  $insert_query = mysqli_query($conn, $insert);
+
+  if ($insert_query) {
+    ?>
+    <script type="text/javascript">
+      alert("subject added sucessfully");
+      window.location.href = 'subject.php';
+    </script>
+
+  <?php
+  } else {
+
+  ?>
+    <script type="text/javascript">
+      alert("Error while adding subject in the database");
+      window.location.href = 'subject.php';
+    </script>
+
+<?php
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 ?>

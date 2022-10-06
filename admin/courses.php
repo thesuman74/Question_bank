@@ -14,7 +14,7 @@ include('includes/links/links.php');
 include('connection.inc.php');
 
 
-$selectquery = "SELECT * FROM countries ";
+$selectquery = "SELECT * FROM courses ";
 $showdata = mysqli_query($conn, $selectquery);
 
 if (isset($_POST['add_courses'])) {
@@ -75,17 +75,13 @@ if (isset($_POST['add_courses'])) {
         </div>
         <h2>Select the number of semesters</h2>
         <select name="semester">
-            <option>select the number of semestere</option>
+            <option>select the number of semesters</option>
             <option value="6" > 6</option>
             <option value="8" > 8</option>
         </select><br>
 
-        <input type="submit" name="add_courses" class="btn btn-primary mt-4" > 
+        <input type="submit" name="add_courses" class="btn btn-primary mt-4" >       
     </form>
-
-
-
-
 
 </div>
 

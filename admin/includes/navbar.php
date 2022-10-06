@@ -19,7 +19,7 @@
   <ul class="navbar-nav bg-gradient-primary position-sticky   sidebar sidebar-dark accordion $zindex-fixed:1030;" id="accordionSidebar">
     <div class="sticky-top ">
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center " href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center " href="index.php">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -42,12 +42,6 @@
 
 
 
-      <li class="nav-item">
-        <a class="nav-link" href="data_entry.php">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Data Entry</span></a>
-      </li>
-
 
 
 
@@ -62,6 +56,14 @@
         <a class="nav-link" href="subject.php">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Subjects</span></a>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="data_entry.php">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Data Entry</span></a>
       </li>
 
       <li class="nav-item">

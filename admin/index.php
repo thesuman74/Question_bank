@@ -12,51 +12,89 @@ include('includes/header.php');
 include('includes/navbar.php');
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+
+  <style>
+    img{
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
 
 
 <!-- Begin Page Content -->
-<div class="container-fluid position sticky">
+<div class="container-fluid w-75 ">
 
   <!-- Page Heading -->
   
-  <div class="card card-success">
+  <div class="card card-outline-secondary">
     <div class="card-body">
       <div class="row">
-        <div class="col-md-12 col-lg-6 col-xl-4">
-          <div class="card mb-2 bg-gradient-dark">
-            <img class="card-img-top" src="img/data_entry.png" alt="Dist Photo 1" style="width: 500px; height: 380px; object-fit:cover ; object-position: 15% 50%;">
-            <div class="mt-2 d-flex flex-column justify-content-end">
-              <a href="data_entry.php" class="text-white btn btn-primary ">Data Entry</a>
+       
+        <div class="col-lg-4">
+
+
+          <div class="card"  style="width: 20rem;">
+            <img class="" src="img/data_entry.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Data Entry</h5>
+              <p class="card-text">You can add new data from here.</p>
+              <a href="data_entry.php" class="btn btn-primary">Data Entry</a>
             </div>
           </div>
-        </div>
-        <div class="col-md-12 col-lg-6 col-xl-4">
-          <div class="card mb-2 bg-gradient-dark">
-            <img class="card-img-top" src="img/subjects.jpg" alt="Dist Photo 1" style="width: 500px; height: 380px; object-fit:cover ; object-position: 15% 50%;">
-            <div class="mt-2 d-flex flex-column justify-content-end">
-                            <a href="subject.php" class="text-white btn btn-primary  ">Subjects Entry</a>
 
-            </div>
-          </div>
-        </div>
-
-         <div class="col-md-12 col-lg-6 col-xl-4">
-          <div class="card mb-2 bg-gradient-dark">
-            <img class="card-img-top" src="img/questions.jpg" alt="Dist Photo 1" style="width: 500px; height: 380px; object-fit:cover ; object-position: 15% 50%;">
-            <div class="mt-2 d-flex flex-column justify-content-end">
-                            <a href="questions.php" class="text-white btn btn-primary  ">Questions </a>
-
-            </div>
-          </div>
         </div>
 
 
-        
+        <div class="col-lg-4">
+
+
+          <div class="card"  style="width: 20rem;">
+            <img class="" src="img/subjects.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Subjects</h5>
+              <p class="card-text">You can add new subjects from here.</p>
+              <a href="subject.php" class="btn btn-primary">subjects</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4">
+
+
+          <div class="card"  style="width: 20rem;">
+            <img class="" src="img/questions.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Questions</h5>
+              <p class="card-text">You can add new Questions from here.</p>
+              <a href="questions.php" class="btn btn-primary">Questions</a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
       </div>
     </div>
   </div>
 </div><!-- /.container-fluid -->
 
+
+
+  
+</body>
+</html>
 
 
 
