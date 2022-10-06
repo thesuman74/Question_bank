@@ -1,4 +1,4 @@
-<?php
+    <?php
 session_start();
 
 if (!isset($_SESSION['fullname'])) {
@@ -36,7 +36,7 @@ if (isset($_POST['add_courses'])) {
     <hr class="w-75 mx-auto ">
 
 
-    <div class="bg-white container mt-5 " style="width:auto; height: 500px;;">
+    <div class="bg-white container mt-5 " style="width:auto; height: 600px;;">
 
 
         <section id="courses" class="about">
@@ -44,10 +44,10 @@ if (isset($_POST['add_courses'])) {
                 <h2>Available courses</h2>
                 <hr>
                 <div class="row">
-                 <?php 
+                   <?php 
 
-                 while ($re = mysqli_fetch_array($showdata)) {
-                 ?>  <div class="col-lg-4 my-3 ">
+                   while ($re = mysqli_fetch_array($showdata)) {
+                   ?>  <div class="col-lg-4 col-sm-4 my-3 ">
                     <a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white " href="" role="button" style="width:200px; height: 150px;" >
                         <?php echo $re['name'];?> 
                     </a>
@@ -70,14 +70,19 @@ if (isset($_POST['add_courses'])) {
 
         <form action="add.php" method="POST"     >
 
-                  <div class="input-group">
-                            <input type="text" name="course" class="form-control" placeholder="Enter Course name" required>
-                        </div>
-                <input type="submit" name="add_courses" class="btn btn-primary mt-4" > 
-                    
-            
-        </form>
-        
+          <div class="input-group">
+            <input type="text" name="course" class="form-control" placeholder="Enter Course name" required>
+        </div>
+        <h2>Select the number of semesters</h2>
+        <select name="semester">
+            <option>select the number of semestere</option>
+            <option value="6" > 6</option>
+            <option value="8" > 8</option>
+        </select><br>
+
+        <input type="submit" name="add_courses" class="btn btn-primary mt-4" > 
+    </form>
+
 
 
 

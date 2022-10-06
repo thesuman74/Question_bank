@@ -56,7 +56,7 @@ include 'include_common/header.php' ?>
                     <select class="form-select" id="country" name="course" required>
                         <option selected disabled value="">Select course</option>
                         <?php while ($row = mysqli_fetch_assoc($county_qry)) : ?>
-                            <option value="<?php echo $row['id']; ?>" name="sumanddfsdf" > <?php echo $row['name']; ?> </option>
+                            <option value="<?php echo $row['id']; ?>" > <?php echo $row['name']; ?> </option>
                         <?php endwhile; ?>
                     </select>
                 </div>
