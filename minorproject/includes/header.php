@@ -14,7 +14,7 @@
 								<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">About</a></li>
 								<li class="menu-item"><a href="courses.php" class="nav-link" data-effect="Courses">Courses</a></li>
 								<li class="menu-item"><a href="#contact" class="nav-link" data-effect="Contact">Contact</a></li>
-								<li class="menu-item "><a href="admin/login.php" type="button" class="nav-link btn " data-effect="login">login</a></li>
+								<li class="menu-item "><a href="../admin/login.php" type="button" class="nav-link btn " data-effect="login">login</a></li>
 
 
 

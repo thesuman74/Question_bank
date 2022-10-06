@@ -391,7 +391,7 @@
 
 			<!-- footer section starts -->
 			<?php 
-			include 'footer.php';
+			include 'includes/footer.php';
 
 			?>
 			<!-- footer section end  -->
