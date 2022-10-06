@@ -18,14 +18,14 @@ session_start();
 
   <?php
 
-  include 'dbcon.php';
+  include 'connection.inc.php';
   if (isset($_POST['submit'])) {
 
     $email = $_POST['email'];
     $password = $_POST['pwd'];
 
     $email_search = "SELECT * FROM login where email='$email'";
-    $query = mysqli_query($con, $email_search);
+    $query = mysqli_query($conn, $email_search);
 
 
     $email_count = mysqli_num_rows($query);
