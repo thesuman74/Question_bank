@@ -1,6 +1,11 @@
 <!-- AShish -->
+<<<<<<< HEAD
 <!-- suman -->
 <?php
+=======
+<!-- This is second comment
+ --><?php
+>>>>>>> ashish
 session_start();
 
 if (!isset($_SESSION['fullname'])) {
