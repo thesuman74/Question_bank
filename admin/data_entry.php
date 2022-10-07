@@ -14,6 +14,8 @@ include('includes/links/links.php');
 
 include('connection.inc.php');
 
+
+
 ?>
 
 <main id="main">
@@ -27,17 +29,14 @@ include('connection.inc.php');
 
 
 <?php
+include 'connection.inc.php';
 
 $country = "SELECT * FROM courses";
 $county_qry = mysqli_query($conn, $country);
 
 
 
-<<<<<<< HEAD
-include 'includes/header.php' ?>
-=======
  ?>
->>>>>>> temp
 
 <div class="d-flex justify-content-center align-items-center">
     <div class="container my-5">
