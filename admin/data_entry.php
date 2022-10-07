@@ -11,10 +11,9 @@ if (!isset($_SESSION['fullname'])) {
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
-<<<<<<< HEAD
-=======
+
 include('connection.inc.php');
->>>>>>> main
+
 
 
 
