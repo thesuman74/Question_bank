@@ -95,7 +95,7 @@ include('connection.inc.php');
                         </thead>
                         <tbody>
                             <?php
-                            include 'dbcon.php';
+                           ;
 
                             $selectquery = "select * from questions";
 

@@ -38,7 +38,7 @@ $county_qry = mysqli_query($conn, $country);
 
 
 
-include 'include_common/header.php' ?>
+ ?>
 
 <div class="d-flex justify-content-center align-items-center">
     <div class="container my-5">
@@ -85,7 +85,7 @@ include 'include_common/header.php' ?>
     </div>
 </div>
 
-<?php include 'include_common/footer.php' ?>
+<?php include 'includes/footer.php' ?>
 
 <script>
     // County State

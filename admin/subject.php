@@ -55,7 +55,7 @@ $showdata = mysqli_query($conn, $selectquery);
 
 
 
-        include 'include_common/header.php' ?>
+        ?>
 
         <div class="d-flex justify-content-center align-items-center">
             <div class="container my-5">
@@ -90,7 +90,7 @@ $showdata = mysqli_query($conn, $selectquery);
             </div>
         </div>
 
-        <?php include 'include_common/footer.php' ?>
+        <?php include 'includes/footer.php' ?>
 
         <script>
     // County State
