@@ -1,5 +1,6 @@
 <!-- AShish -->
-<?php
+<!-- This is second comment
+ --><?php
 session_start();
 
 if (!isset($_SESSION['fullname'])) {
