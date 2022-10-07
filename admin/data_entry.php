@@ -11,17 +11,7 @@ if (!isset($_SESSION['fullname'])) {
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
-
-
-$selectquery = "SELECT * FROM hero WHERE id='1'";
-
-
-
-$showdata = mysqli_query($con, $selectquery);
-$re = mysqli_fetch_array($showdata);
-
-
-
+include 'connection.inc.php';
 
 ?>
 
@@ -36,14 +26,13 @@ $re = mysqli_fetch_array($showdata);
 
 
 <?php
-include 'connection.inc.php';
 
 $country = "SELECT * FROM courses";
 $county_qry = mysqli_query($conn, $country);
 
 
 
-include 'include_common/header.php' ?>
+include 'includes/header.php' ?>
 
 <div class="d-flex justify-content-center align-items-center">
     <div class="container my-5">
@@ -90,7 +79,7 @@ include 'include_common/header.php' ?>
     </div>
 </div>
 
-<?php include 'include_common/footer.php' ?>
+<?php include 'includes/footer.php' ?>
 
 <script>
     // County State
