@@ -12,7 +12,13 @@ include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
 <<<<<<< HEAD
+<<<<<<< HEAD
 include('connection.inc.php');
+=======
+
+include('connection.inc.php');
+
+>>>>>>> temp
 
 
 
@@ -41,7 +47,11 @@ $county_qry = mysqli_query($conn, $country);
 
 
 
+<<<<<<< HEAD
 include 'includes/header.php' ?>
+=======
+ ?>
+>>>>>>> temp
 
 <div class="d-flex justify-content-center align-items-center">
     <div class="container my-5">
