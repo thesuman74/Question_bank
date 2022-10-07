@@ -11,22 +11,8 @@ if (!isset($_SESSION['fullname'])) {
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
-<<<<<<< HEAD
-<<<<<<< HEAD
-include('connection.inc.php');
-=======
 
 include('connection.inc.php');
-
->>>>>>> temp
-
-
-
-
-
-=======
-include 'connection.inc.php';
->>>>>>> suman
 
 ?>
 
