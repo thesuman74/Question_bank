@@ -1,9 +1,7 @@
-<!-- AShish -->
+
 
 <?php
 
-// <!-- This is second comment
-//  -->
 
 session_start();
 
@@ -18,12 +16,7 @@ if (!isset($_SESSION['fullname'])) {
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
-
 include('connection.inc.php');
-
-
-// <!-- this is the new line in ashish branch  -->
-
 ?>
 
 <main id="main">
