@@ -11,12 +11,16 @@ if (!isset($_SESSION['fullname'])) {
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
+<<<<<<< HEAD
 include('connection.inc.php');
 
 
 
 
 
+=======
+include 'connection.inc.php';
+>>>>>>> suman
 
 ?>
 
@@ -31,14 +35,13 @@ include('connection.inc.php');
 
 
 <?php
-include 'connection.inc.php';
 
 $country = "SELECT * FROM courses";
 $county_qry = mysqli_query($conn, $country);
 
 
 
-include 'include_common/header.php' ?>
+include 'includes/header.php' ?>
 
 <div class="d-flex justify-content-center align-items-center">
     <div class="container my-5">
@@ -85,7 +88,7 @@ include 'include_common/header.php' ?>
     </div>
 </div>
 
-<?php include 'include_common/footer.php' ?>
+<?php include 'includes/footer.php' ?>
 
 <script>
     // County State
