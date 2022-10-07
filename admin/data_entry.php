@@ -11,7 +11,6 @@ if (!isset($_SESSION['fullname'])) {
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
-include('dbcon.php');
 
 
 $selectquery = "SELECT * FROM hero WHERE id='1'";
