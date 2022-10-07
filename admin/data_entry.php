@@ -11,15 +11,9 @@ if (!isset($_SESSION['fullname'])) {
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
-include('dbcon.php');
+include('connection.inc.php');
 
 
-$selectquery = "SELECT * FROM hero WHERE id='1'";
-
-
-
-$showdata = mysqli_query($con, $selectquery);
-$re = mysqli_fetch_array($showdata);
 
 
 
