@@ -1,3 +1,13 @@
+<?php
+include('../../admin/connection.inc.php');
+
+$sql = "SELECT * FROM questions";
+$query = mysqli_query($conn,$sql);
+$result = mysqli_fetch_array($query);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,8 +113,8 @@
 							</div>
 
 							<div class="col-lg-4  col-md-6 animate__animated animate__fadeIn animate__delay-1.5s">
-								<h5 class="m-3 ">CT</h5>
-								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
+								<h5 class="m-3 "><?php echo $result['subject']; ?></h5>
+								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1uZapibiCIS5xKM0klnOPtVeOHJOT-j7r/preview" allow="autoplay" width="300" height="200" allow=""></iframe>
 
 								<a href="Menu.pdf" class="btn btn-success btn-lg d-flex  text-white" style="width:200px; height: 30px;"> Download </a>
 							</div>

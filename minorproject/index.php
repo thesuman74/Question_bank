@@ -13,8 +13,6 @@
 		<!-- scripts ends here -->
 
 
-
-
 	</head>
 
 	<body>
