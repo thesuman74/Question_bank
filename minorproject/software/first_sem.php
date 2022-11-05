@@ -84,7 +84,7 @@
 					     </div>
 					 </div>
 
-<<<<<<< HEAD
+
 							<div class="col-lg-4  col-md-6 animate__animated animate__fadeIn animate__delay-1.0s">
 								<h5 class="m-3 ">Communication Technique</h5>
 								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
@@ -131,9 +131,6 @@
 
 
 					</div>
-=======
-					
->>>>>>> temp
 
 
 	</section>
