@@ -27,6 +27,34 @@ if (isset($_POST['add_courses'])) {
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    img{
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    a {
+      align-items: center;
+      line-height: 28px;
+      justify-content: center;
+
+      --animate-duration: 800ms;
+      --animate-delay: 0.9s;
+
+    }
+  
+  </style>
+</head>
+<body>
+    
 
 
 <main id="main">
@@ -49,7 +77,7 @@ if (isset($_POST['add_courses'])) {
                    while ($re = mysqli_fetch_array($showdata)) {
                    ?>  <div class="col-lg-4 col-sm-4 my-3 ">
                     <a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white " href="" role="button" style="width:200px; height: 150px;" >
-                        <?php echo $re['name'];?> 
+                        <?php echo strtoupper($re['name']);?> 
                     </a>
                     <!-- <button class="btn btn-danger mt-2">Delete</button> -->
                 </div>
@@ -97,7 +125,8 @@ if (isset($_POST['add_courses'])) {
 <!-- End About Section -->
 
 
-
+</body>
+</html>
 
 
 
