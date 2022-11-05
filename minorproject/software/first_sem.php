@@ -1,13 +1,12 @@
-<?php
-include('../../admin/connection.inc.php');
 
-$sql = "SELECT * FROM questions";
-$query = mysqli_query($conn,$sql);
-$result = mysqli_fetch_array($query);
+	<?php 
+			include('../../admin/connection.inc.php');
+			              $subject = "SELECT * FROM subject WHERE state_id = '1'";
+			              $link = "SELECT link FROM questions WHERE semester ='I'";
+                          $subject_query = mysqli_query($conn,$subject);
+                          $link_query = mysqli_query($conn,$link);
 
-?>
-
-
+                 ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,17 +65,26 @@ $result = mysqli_fetch_array($query);
 						<h2 class="section-title text-secondary ">Select subjects</h2>
 					</div>
 
-					<div class="container-fluid ">
+					<div class="container-fluid">
 
-						<div class="row m-2">
+						 <div class="row m-2">
+						 	<?php 
+			                    while(($sub = mysqli_fetch_array($subject_query)) && ($lin = mysqli_fetch_array($link_query))) {
+
+                           ?>
 							<div class="col-lg-4 col-md-6 animate__animated animate__fadeIn animate__delay-0.5s">
-								<h5 class="m-3 ">Engineering maths I</h5>
-								<iframe id="pic" class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
-
+								<h5 class="m-3 "><?php echo $sub['name']; ?></h5>
+								<iframe id="pic" class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="<?php echo $lin['link']; ?> " width="300" height="200" allow=""></iframe>
 								<a href="Menu.pdf" class="btn btn-success btn-lg d-flex  text-white" style="width:200px; height: 30px;"> Download </a>
 							</div>
+							<?php 
+						       }
+						     ?>
 
+					     </div>
+					 </div>
 
+<<<<<<< HEAD
 							<div class="col-lg-4  col-md-6 animate__animated animate__fadeIn animate__delay-1.0s">
 								<h5 class="m-3 ">Communication Technique</h5>
 								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
@@ -123,6 +131,9 @@ $result = mysqli_fetch_array($query);
 
 
 					</div>
+=======
+					
+>>>>>>> temp
 
 
 	</section>
