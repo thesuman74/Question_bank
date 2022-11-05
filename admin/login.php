@@ -120,6 +120,11 @@ session_start();
             <button type="submit" name="submit" class="btn btn-primary btn-block">Login</button>
 
           </div>
+          <div class="form-group">
+            <a href="../minorproject/index.php">Back to Home</a>
+
+          </div>
+
 
 
           <!--   <a href="" style="border-radius:16px;" name="submit"  class="btn btn-success col-md" role="button">Login</a> -->
