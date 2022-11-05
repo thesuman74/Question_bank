@@ -7,9 +7,9 @@ $db = "projecti";
 
 $con = mysqli_connect($server, $user, $password, $db);
 
-if ($con) {
-	echo "connection succesful";
-}
+// if ($con) {
+// 	echo "connection succesful";
+// }
 // $server = "sql112.epizy.com";
 // $user = "epiz_32139406";
 // $password = "fS09848512j";

@@ -48,7 +48,7 @@ session_start();
   ?>
 
         <script type="text/javascript">
-          location.replace("admin.php");
+          location.replace("../admin/index.php");
         </script>
 
       <?php

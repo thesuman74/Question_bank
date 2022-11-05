@@ -1,3 +1,13 @@
+
+<?php
+include('../../admin/connection.inc.php');
+			              $subject = "SELECT name FROM subject WHERE state_id = '1'";
+			              $link = "SELECT link FROM questions WHERE semester ='I'";
+                          $subject_query = mysqli_query($conn,$subject);
+                          $link_query = mysqli_query($conn,$link);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -120,3 +130,4 @@
 </body>
 
 </html>
+
