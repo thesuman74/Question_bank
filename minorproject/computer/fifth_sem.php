@@ -57,7 +57,7 @@
 					<div class="section-header align-center">
 						<div class="title">
 							<div class="row float-left">
-								<span class="text-danger "><a class="text-secondary " href="../courses.php">courses</a>>><a class="text-secondary " href="semesters.php">Software</a>>><a class="text-secondary " href="">Fifth semester</a></span>
+								<span class="text-danger "><a class="text-secondary " href="../courses.php">courses</a>>><a class="text-secondary " href="semesters.php">Computer</a>>><a class="text-secondary " href="">Fifth semester</a></span>
 
 							</div><br>
 
