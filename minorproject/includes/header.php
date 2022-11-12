@@ -4,7 +4,7 @@
 			<div class="inner-content">
 				<div class="grid">
 					<div class="main-logo">
-						<a href="../index.php"><h1>Question <span style="color:brown ;">Bank</span> </h1> </a>
+						<a href="../minorproject/index.php"><h1>Question <span style="color:brown ;">Bank</span> </h1> </a>
 					</div>
 
 					<nav id="navbar">

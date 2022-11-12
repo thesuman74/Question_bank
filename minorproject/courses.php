@@ -66,7 +66,7 @@
 										
 
 										<figure class="product-style animate__animated animate__fadeIn">
-											<a href="software/semesters.php"><img src="images/tab-item8.jpg" alt="Books" class="product-item mr-4"></a>
+											<a href="software/semesters.php"><img src="images/soft.jpg" alt="Books" class="product-item mr-4"></a>
 											<figcaption>
 												<h3>Software Engineering</h3>
 											</figcaption>
