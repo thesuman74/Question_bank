@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2022 at 08:05 AM
+-- Generation Time: Nov 12, 2022 at 07:39 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `world`
+-- Database: `gces_project_1`
 --
 
 -- --------------------------------------------------------
@@ -47941,17 +47941,19 @@ INSERT INTO `cities` (`id`, `name`, `state_id`) VALUES
 
 CREATE TABLE `courses` (
   `id` int(11) NOT NULL,
-  `name` varchar(150) NOT NULL
+  `sortname` varchar(3) NOT NULL,
+  `name` varchar(150) NOT NULL,
+  `phonecode` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`id`, `name`) VALUES
-(101, 'computer'),
-(102, 'software'),
-(277, 'electrical');
+INSERT INTO `courses` (`id`, `sortname`, `name`, `phonecode`) VALUES
+(101, 'AF', 'computer', 93),
+(102, 'AL', 'software', 355),
+(277, '', 'electrical', 0);
 
 -- --------------------------------------------------------
 
@@ -47992,9 +47994,20 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`id`, `course`, `semester`, `subject`, `link`, `file`) VALUES
-(1, 'computer', 'I', 'computer-first sem ', 'link', 'Screenshot (42).png'),
-(2, 'software', 'II', 'software-second sem ', 'link', ''),
-(3, 'electrical', 'I', 'electrical-first sem ', 'link', 'Screenshot (40).png');
+(1, 'computer', 'I', 'computer-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(2, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(3, 'electrical', 'I', 'electrical-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (40).png'),
+(4, 'computer', 'I', 'computer-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(5, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(6, 'electrical', 'I', 'electrical-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (40).png'),
+(7, 'computer', 'I', 'computer-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(8, 'electrical', 'I', 'electrical-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (40).png'),
+(9, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(10, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(11, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(12, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(13, 'software', 'I', 'Engineering Mathematics-I	', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', '2226455.jpg'),
+(14, 'software', 'I', 'Engineering Mathematics-I	', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', '2226455.jpg');
 
 -- --------------------------------------------------------
 
@@ -50002,100 +50015,102 @@ CREATE TABLE `subject` (
 --
 
 INSERT INTO `subject` (`id`, `name`, `state_id`) VALUES
-(1, 'Engineering Mathmatics I', '1'),
-(2, 'Chemistry', '1'),
-(3, 'Communication Techniques	', '1'),
-(4, 'Basic Electrical Engineering', '1'),
-(5, 'Mechanical Workshop', '1'),
-(6, 'Programming in C	', '1'),
-(7, 'Engineering Mathematics-II', '2'),
-(8, 'Physis', '2'),
-(9, 'Thermal Science', '2'),
-(10, 'Engineering Drawing', '2'),
-(11, 'Object Oriented Programming in C++\n', '2'),
-(12, 'Applied Mechanics I\n', '2'),
-(13, 'Engineering Mathematics - III', '3'),
-(14, 'Electrical Engineering Materials', '3'),
-(15, 'Network Theory', '3'),
-(16, 'Electronic Devices and Circuits', '3'),
-(17, 'Logic Circuits', '3'),
-(18, 'Data Structure and Algorithms', '3'),
-(19, 'Engineering Math IV', '4'),
-(20, 'Instrumentation', '4'),
-(21, 'Programming Technology', '4'),
-(22, 'Database Management Systems', '4'),
-(23, 'Microprocessor', '4'),
-(24, 'Project I', '4'),
-(25, 'Operating System', '5'),
-(26, 'Numerical Methods', '5'),
-(27, 'Probability and Statistics', '5'),
-(28, 'Computer Architecture	', '5'),
-(29, 'Computer Graphics	', '5'),
-(30, 'Theory of Computation	', '5'),
-(31, 'Simulation and Modeling', '6'),
-(32, 'Data Communication\n', '6'),
-(33, 'Object Oriented Software Engineering\n', '6'),
-(34, 'Embedded System\n', '6'),
-(35, 'Elective I\n', '6'),
-(36, 'Project II\n', '6'),
-(37, 'Engineering Economics	', '7'),
-(38, 'Artificial Intelligence	', '7'),
-(39, 'Computer Networks	', '7'),
-(40, 'Image Processing and Pattern Recognition	', '7'),
-(41, 'ICT Project Management	', '7'),
-(42, 'Elective II	', '7'),
-(43, 'Digital Signal Analysis and Processing\n', '8'),
-(44, 'Social and Professional Issues in IT\n', '8'),
-(45, 'Organization and Management\n', '8'),
-(46, 'Information System\n', '8'),
-(47, 'Elective III\n', '8'),
-(48, 'Major Project\n', '8'),
-(49, 'Engineering Mathematics-I	', '9'),
-(50, 'Physics	', '9'),
-(51, 'Communication Technique	', '9'),
-(52, 'Problem Solving Techniques	', '9'),
-(53, 'Fundamentals of IT	', '9'),
-(54, 'Programming in C	', '9'),
-(55, 'Engineering Mathematics-II', '10'),
-(56, 'Logic Circuits\n', '10'),
-(57, 'Mathematical Foundation of Computer Science\n', '10'),
-(58, 'Engineering Drawing\n', '10'),
-(59, 'Object Oriented Programming in C++\n', '10'),
-(60, 'Web Technology\n', '10'),
-(61, 'Engineering Mathematics - III', '11'),
-(62, 'Software Engineering Fundaments	', '11'),
-(63, 'Microprocessor & Assembly Lang	', '11'),
-(64, 'Data Structure and Algorithms	', '11'),
-(65, 'Probability & Queuing Theory	', '11'),
-(66, 'Programming in Java	', '11'),
-(67, 'Numerical Methods\n', '12'),
-(68, 'Computer Graphics\n', '12'),
-(69, 'Computer Organization & Architecture\n', '12'),
-(70, 'Database Management Systems\n', '12'),
-(71, 'Object Oriented Design & Modeling through UML\n', '12'),
-(72, 'Project I\n', '12'),
-(73, 'Applied Operating System	', '13'),
-(74, 'Simulation & Modeling	', '13'),
-(75, 'Artificial Intelligence & Neural Network	', '13'),
-(76, 'System Programming	', '13'),
-(77, 'Analysis & Design of Algorithm	', '13'),
-(78, 'Organization and Management	', '13'),
-(79, 'Multimedia Systems', '14'),
-(80, 'Computer Networks\n', '14'),
-(81, 'Principles of Programming Languages\n', '14'),
-(82, 'Engineering Economics\n', '14'),
-(83, 'Object Oriented Software Development\n', '14'),
-(84, 'Project II\n', '14'),
-(85, 'Real -Time Systems', '15'),
-(86, 'Distributed System	', '15'),
-(87, 'Enterprise Application Development	', '15'),
-(88, 'Image Processing & Pattern Recognition	', '15'),
-(89, 'Software Testing, Verification, Validation & Quality Assurance	', '15'),
-(90, 'Elective I	', '15'),
-(91, 'Software Project Management\n', '16'),
-(92, 'Network Programming\n', '16'),
-(95, 'Elective II\n', '16'),
-(96, 'Major Project', '16'),
+(1, 'computer-first sem ', '1'),
+(2, 'computer-first sem ', '1'),
+(3, 'computer-first sem ', '1'),
+(4, 'computer-first sem ', '1'),
+(5, 'computer-first sem ', '1'),
+(6, 'computer-first sem ', '1'),
+(7, 'computer-second sem ', '2'),
+(8, 'computer-second sem ', '2'),
+(9, 'computer-second sem ', '2'),
+(10, 'computer-second sem ', '2'),
+(11, 'computer-second sem ', '2'),
+(12, 'computer-second sem ', '2'),
+(13, 'computer-third sem ', '3'),
+(14, 'computer-third sem ', '3'),
+(15, 'computer-third sem ', '3'),
+(16, 'computer-third sem ', '3'),
+(17, 'computer-third sem ', '3'),
+(18, 'computer-third sem ', '3'),
+(19, 'computer-fourth sem ', '4'),
+(20, 'computer-fourth sem ', '4'),
+(21, 'computer-fourth sem ', '4'),
+(22, 'computer-fourth sem ', '4'),
+(23, 'computer-fourth sem ', '4'),
+(24, 'computer-fourth sem ', '4'),
+(25, 'computer-fifth sem ', '5'),
+(26, 'computer-fifth sem ', '5'),
+(27, 'computer-fifth sem ', '5'),
+(28, 'computer-fifth sem ', '5'),
+(29, 'computer-fifth sem ', '5'),
+(30, 'computer-sixth sem ', '5'),
+(31, 'computer-sixth sem ', '6'),
+(32, 'computer-sixth sem ', '6'),
+(33, 'computer-sixth sem ', '6'),
+(34, 'computer-sixth sem ', '6'),
+(35, 'computer-sixth sem ', '6'),
+(36, 'computer-sixth sem ', '6'),
+(37, 'computer-seventh sem ', '7'),
+(38, 'computer-seventh sem ', '7'),
+(39, 'computer-seventh sem ', '7'),
+(40, 'computer-seventh sem ', '7'),
+(41, 'computer-seventh sem ', '7'),
+(42, 'computer-seventh sem ', '7'),
+(43, 'computer-eighth sem ', '8'),
+(44, 'computer-eighth sem ', '8'),
+(45, 'computer-eighth sem ', '8'),
+(46, 'computer-eighth sem ', '8'),
+(47, 'computer-eighth sem ', '8'),
+(48, 'computer-eighth sem ', '8'),
+(49, 'Software-first sem\r\n', '9'),
+(50, 'Software-first sem\r\n', '9'),
+(51, 'Software-first sem\r\n', '9'),
+(52, 'Software-first sem\r\n', '9'),
+(53, 'Software-first sem\r\n', '9'),
+(54, 'Software-first sem\r\n', '9'),
+(55, 'software-second sem ', '10'),
+(56, 'software-second sem ', '10'),
+(57, 'software-second sem ', '10'),
+(58, 'software-second sem ', '10'),
+(59, 'software-second sem ', '10'),
+(60, 'software-second sem ', '10'),
+(61, 'software-third sem ', '11'),
+(62, 'software-third sem ', '11'),
+(63, 'software-third sem ', '11'),
+(64, 'software-third sem ', '11'),
+(65, 'software-third sem ', '11'),
+(66, 'software-third sem ', '11'),
+(67, 'software-fourth sem ', '12'),
+(68, 'software-fourth sem ', '12'),
+(69, 'software-fourth sem ', '12'),
+(70, 'software-fourth sem ', '12'),
+(71, 'software-fourth sem ', '12'),
+(72, 'software-fourth sem ', '12'),
+(73, 'software-fifth sem ', '13'),
+(74, 'software-fifth sem ', '13'),
+(75, 'software-fifth sem ', '13'),
+(76, 'software-fifth sem ', '13'),
+(77, 'software-fifth sem ', '13'),
+(78, 'software-fifth sem ', '13'),
+(79, 'software-sixth sem ', '14'),
+(80, 'software-sixth sem ', '14'),
+(81, 'software-sixth sem ', '14'),
+(82, 'software-sixth sem ', '14'),
+(83, 'software-sixth sem ', '14'),
+(84, 'software-sixth sem ', '14'),
+(85, 'software-seventh sem ', '15'),
+(86, 'software-seventh sem ', '15'),
+(87, 'software-seventh sem ', '15'),
+(88, 'software-seventh sem ', '15'),
+(89, 'software-seventh sem ', '15'),
+(90, 'software-seventh sem ', '15'),
+(91, 'software-eighth sem ', '16'),
+(92, 'software-eighth sem ', '16'),
+(93, 'software-eighth sem ', '16'),
+(94, 'software-eighth sem ', '16'),
+(95, 'software-eighth sem ', '16'),
+(96, 'computer-eighth sem ', '16'),
 (97, 'electrical-first sem ', '4198');
 
 --
@@ -50164,7 +50179,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `states`
