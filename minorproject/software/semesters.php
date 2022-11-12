@@ -1,10 +1,3 @@
-<?php
-include('../../admin/connection.inc.php');
-
-$sql = "SELECT * FROM questions";
-$query = mysqli_query($conn,$sql);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +15,7 @@ $query = mysqli_query($conn,$sql);
 			align-items: center;
 			line-height: 28px;
 			justify-content: center;
+
 			--animate-duration: 800ms;
 			--animate-delay: 0.9s;
 
@@ -45,6 +39,8 @@ $query = mysqli_query($conn,$sql);
 	<section id="popular-books" class="bookshelf">
 		<div class="container">
 			<div class="row">
+				<div class="inner-content">
+
 					<div class="section-header align-center">
 						<div class="title">
 							<div class="row float-left">
@@ -56,22 +52,53 @@ $query = mysqli_query($conn,$sql);
 						</div>
 						<h2 class="  section-title">Semesters</h2>
 					</div>
-					<?php 
 
-					while($result = mysqli_fetch_array($query)){
-				?>
-						<div class="col-md-3">
-							<div class="card-body">
-								<a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="first_sem.php" role="button" style="width:200px; height: 150px;"><?php echo $result['semester']; ?></a>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-sm ">
+								<a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="first_sem.php" role="button" style="width:200px; height: 150px;">First semester </a>
 							</div>
+							<div class="col-sm">
+								<a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="second_sem.php" style="width:200px; height: 150px;">Second semester </a>
+							</div>
+							<div class="col-sm">
+								<a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="third_sem.php" style="width:200px; height: 150px;">Third semester </a>
+
+							</div>
+							<div class="col-sm">
+								<a class="btn btn-primary btn-lg d-flex animate__animated animate__pulse  text-white" href="fourth_sem.php" style="width:200px; height: 150px;">Fourth semester </a>
+							</div>
+						</div>
+
+						<div class="row mt-5">
+							<div class="col-sm">
+								<a class="btn btn-primary btn-lg d-flex animate__animated animate__pulse  text-white" href="fifth_sem.php" style="width:200px; height: 150px;">Fifth semester </a>
+							</div>
+							<div class="col-sm">
+								<a class="btn btn-primary btn-lg d-flex animate__animated animate__pulse  text-white" href="sixth_sem.php" style="width:200px; height: 150px;">Sixth semester </a>
+							</div>
+							<div class="col-sm">
+								<a class="btn btn-primary btn-lg d-flex animate__animated animate__pulse  text-white" href="seventh_sem.php" style="width:200px; height: 150px;">Seventh semester </a>
+
+							</div>
+							<div class="col-sm">
+								<a class="btn btn-primary btn-lg d-flex animate__animated animate__pulse text-white" href="eighth_sem.php" style="width:200px; height: 150px;">Eight semester </a>
+							</div>
+						</div>
+
 					</div>
 
-					<?php
-						}
-					?>
-					</div>
-					</div>
+
+
+
+
+
+				</div>
 				<!--inner-tabs-->
+
+			</div>
+		</div>
 	</section>
 
 
