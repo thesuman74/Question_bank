@@ -32,7 +32,6 @@ $showdata = mysqli_query($conn, $selectquery);
     <!-- ======= About Section ======= -->
 
     <h1 class="text-center text-capitalize pt-1 display-3 font-weight-normal">Subjects</h1>
-    <hr class="w-75 mx-auto ">
 
 
     <div class="bg-white container mt-5 " style="width:auto; height: 500px;;">

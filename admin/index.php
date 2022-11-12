@@ -17,6 +17,8 @@ include('includes/navbar.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <title>Dashboard</title>
 
 
@@ -26,6 +28,17 @@ include('includes/navbar.php');
       height: 250px;
       object-fit: cover;
     }
+
+    a {
+      align-items: center;
+      line-height: 28px;
+      justify-content: center;
+
+      --animate-duration: 800ms;
+      --animate-delay: 0.9s;
+
+    }
+  
   </style>
 </head>
 <body>
@@ -36,56 +49,26 @@ include('includes/navbar.php');
 
   <!-- Page Heading -->
   
-  <div class="card card-outline-secondary">
-    <div class="card-body">
-      <div class="row">
-       
-        <div class="col-lg-4">
-
-
-          <div class="card"  style="width: 20rem;">
-            <img class="" src="img/data_entry.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Data Entry</h5>
-              <p class="card-text">You can add new data from here.</p>
-              <a href="data_entry.php" class="btn btn-primary">Data Entry</a>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="col-lg-4">
-
-
-          <div class="card"  style="width: 20rem;">
-            <img class="" src="img/subjects.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Subjects</h5>
-              <p class="card-text">You can add new subjects from here.</p>
-              <a href="subject.php" class="btn btn-primary">subjects</a>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-lg-4">
-
-
-          <div class="card"  style="width: 20rem;">
-            <img class="" src="img/questions.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Questions</h5>
-              <p class="card-text">You can add new Questions from here.</p>
-              <a href="questions.php" class="btn btn-primary">Questions</a>
-            </div>
-          </div>
-
-        </div>
-
-
-
-
-      </div>
+  <div class="row">
+              <div class="col-lg-3 m-2">
+                <a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="courses.php" role="button" style="width:200px; height: 150px;">Courses</a>
+              </div>
+              <div class="col-lg-3 m-2">
+                <a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="subject.php" style="width:200px; height: 150px;">Subjects </a>
+              </div>
+              <div class="col-lg-3 m-2">
+                <a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="data_entry.php" style="width:200px; height: 150px;">Data Entry </a>
+              </div>
+    </div>
+   
+   <div class="row my-3">
+              <div class="col-lg-3 m-2">
+                <a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="questions.php" role="button" style="width:200px; height: 150px;">Questions</a>
+              </div>
+              <div class="col-lg-3 m-2">
+                <a class="btn btn-primary animate__animated animate__pulse btn-lg d-flex  text-white" href="search.php" style="width:200px; height: 150px;">Search Questions </a>
+              </div>
+              
     </div>
   </div>
 </div><!-- /.container-fluid -->

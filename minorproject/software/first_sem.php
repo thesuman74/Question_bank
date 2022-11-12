@@ -1,7 +1,9 @@
 
 	<?php 
 			include('../../admin/connection.inc.php');
-			              $subject = "SELECT * FROM subject WHERE state_id = '1'";
+
+			              $subject = "SELECT * FROM subject WHERE state_id = '9'";
+
 			              $link = "SELECT link FROM questions WHERE semester ='I'";
                           $subject_query = mysqli_query($conn,$subject);
                           $link_query = mysqli_query($conn,$link);
@@ -57,7 +59,7 @@
 					<div class="section-header align-center">
 						<div class="title">
 							<div class="row float-left">
-								<span class="text-danger "><a class="text-secondary " href="../courses.php">courses</a>>><a class="text-secondary " href="semesters.php">Software</a>>><a class="text-secondary " href="subjects.php">First semester</a></span>
+								<span class="text-danger "><a class="text-secondary " href="../courses.php">courses</a>>><a class="text-secondary " href="semesters.php">Software</a>>><a class="text-secondary " href="">First semester</a></span>
 
 							</div><br>
 
@@ -85,47 +87,6 @@
 					 </div>
 
 
-							<div class="col-lg-4  col-md-6 animate__animated animate__fadeIn animate__delay-1.0s">
-								<h5 class="m-3 ">Communication Technique</h5>
-								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
-
-								<a href="Menu.pdf" class="btn btn-success btn-lg d-flex  text-white" style="width:200px; height: 30px;"> Download </a>
-							</div>
-
-							<div class="col-lg-4  col-md-6 animate__animated animate__fadeIn animate__delay-1.5s">
-								<h5 class="m-3 ">Fundamentals of IT </h5>
-								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
-
-								<a href="Menu.pdf" class="btn btn-success btn-lg d-flex  text-white" style="width:200px; height: 30px;"> Download </a>
-							</div>
-
-
-
-
-
-						</div>
-						<div class="row m-2">
-							<div class="col-lg-4 col-md-6 animate__animated animate__fadeIn animate__delay-0.5s">
-								<h5 class="m-3 ">Physics</h5>
-								<iframe id="pic" class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
-
-								<a href="Menu.pdf" class="btn btn-success btn-lg d-flex  text-white" style="width:200px; height: 30px;"> Download </a>
-							</div>
-
-
-							<div class="col-lg-4  col-md-6 animate__animated animate__fadeIn animate__delay-1.0s">
-								<h5 class="m-3 ">PQT</h5>
-								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview" width="300" height="200" allow=""></iframe>
-
-								<a href="Menu.pdf" class="btn btn-success btn-lg d-flex  text-white" style="width:200px; height: 30px;"> Download </a>
-							</div>
-
-							<div class="col-lg-4  col-md-6 animate__animated animate__fadeIn animate__delay-1.5s">
-								<h5 class="m-3 "><?php echo $result['subject']; ?></h5>
-								<iframe class="shadow-lg p-3 mb-3 bg-white rounded animate__animated animate__fadeIn" src="https://drive.google.com/file/d/1uZapibiCIS5xKM0klnOPtVeOHJOT-j7r/preview" allow="autoplay" width="300" height="200" allow=""></iframe>
-
-								<a href="Menu.pdf" class="btn btn-success btn-lg d-flex  text-white" style="width:200px; height: 30px;"> Download </a>
-							</div>
 
 						</div>
 

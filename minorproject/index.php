@@ -35,7 +35,7 @@
 					<div class="slider-item">
 						<div class="banner-content" data-aos="fade-up">
 							<h2 class="banner-title">Question Bank</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu.</p>
+							<p>“Successful people ask better questions, and as a result, they get better answers.” -Tony Robbins</p>
 							<div class="btn-wrap">
 								<a href="#" class="btn-outline-accent btn-accent-arrow">Read More<i class="icon icon-ns-arrow-right"></i></a>
 							</div>
@@ -89,115 +89,80 @@
 									<div class="grid">
 
 										<figure class="product-style">
-											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
+											<img src="images/java.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Portrait photography</h3>
-												<p>Adam Silber</p>
+												<h3>Programming in Java</h3>
+												
 											</figcaption>
 										</figure>
 
 										<figure class="product-style">
-											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
+											<img src="images/dsa.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Once upon a time</h3>
-												<p>Klien Marry</p>
+												<h3>Data Structure And Algorithm</h3>
+												
 											</figcaption>
 										</figure>
 
 										<figure class="product-style">
-											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
+											<img src="images/c.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Tips of simple lifestyle</h3>
-												<p>Bratt Smith</p>
+												<h3>C Programming</h3>
+												
 											</figcaption>
 										</figure>
 
 										<figure class="product-style">
-											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
+											<img src="images/C++.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Just felt from outside</h3>
-												<p>Nicole Wilson</p>
+												<h3>C++ Programming</h3>
+												
 											</figcaption>
 										</figure>
 
-										<figure class="product-style">
-											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
-											<figcaption>
-												<h3>Peaceful Enlightment</h3>
-												<p>Marmik Lama</p>
-											</figcaption>
-										</figure>
-
-										<figure class="product-style">
-											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
-											<figcaption>
-												<h3>Great travel at desert</h3>
-												<p>Sanchit Howdy</p>
-											</figcaption>
-										</figure>
-
-										<figure class="product-style">
-											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
-											<figcaption>
-												<h3>Life among the pirates</h3>
-												<p>Armor Ramsey</p>
-											</figcaption>
-										</figure>
-
-										<figure class="product-style">
-											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
-											<figcaption>
-												<h3>Simple way of piece life</h3>
-												<p>Armor Ramsey</p>
-											</figcaption>
-										</figure>
-
+										
 									</div>
 
 								</div>
 								<div id="COMPUTER" data-tab-content>
 									<div class="grid">
 										<figure class="product-style">
-											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
+											<img src="images/c.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Peaceful Enlightment</h3>
-												<p>Marmik Lama</p>
+												<h3>C programming</h3>
+												
 											</figcaption>
 										</figure>
 
 										<figure class="product-style">
-											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
+											<img src="images/java.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Great travel at desert</h3>
-												<p>Sanchit Howdy</p>
+												<h3>Programming in Java</h3>
+												
 											</figcaption>
 										</figure>
 
 										<figure class="product-style">
-											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+											<img src="images/dsa.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Life among the pirates</h3>
-												<p>Armor Ramsey</p>
+												<h3>Data Structure and Algorithm</h3>
+											
 											</figcaption>
 										</figure>
 
 										<figure class="product-style">
-											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+											<img src="images/c++.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Simple way of piece life</h3>
-												<p>Armor Ramsey</p>
+												<h3>C++ Programming</h3>
+											
 											</figcaption>
 										</figure>
 									</div>
@@ -208,36 +173,36 @@
 										
 
 										<figure class="product-style">
-											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
+											<img src="images/java.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Great travel at desert</h3>
-												<p>Sanchit Howdy</p>
+												<h3>Programming in Java</h3>
+												
 											</figcaption>
 										</figure>
 
 										<figure class="product-style">
-											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
+											<img src="images/dsa.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Peaceful Enlightment</h3>
-												<p>Marmik Lama</p>
+												<h3>Data Structure And Algorithm</h3>
+												
 											</figcaption>
 										</figure>
 										<figure class="product-style">
-											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+											<img src="images/c.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Simple way of piece life</h3>
-												<p>Armor Ramsey</p>
+												<h3>C Programming</h3>
+												
 											</figcaption>
 										</figure>
 										<figure class="product-style">
-											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+											<img src="images/C++.jpg" alt="Books" class="product-item">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">View Questions</button>
 											<figcaption>
-												<h3>Life among the pirates</h3>
-												<p>Armor Ramsey</p>
+												<h3>C++ Programming</h3>
+												
 											</figcaption>
 										</figure>
 
@@ -291,8 +256,8 @@
 									</figure>
 
 									<div class="post-item">	
-										<div class="meta-date">Mar 30, 2021</div>			
-										<h3><a href="#">Reading books always makes the moments happy</a></h3>
+										<div class="meta-date"> </div>			
+										<h3><a href="#">System Programming</a></h3>
 
 										<div class="links-element">
 											<div class="categories">inspiration</div>
@@ -321,8 +286,8 @@
 										</a>
 									</figure>
 									<div class="post-item">	
-										<div class="meta-date">Mar 29, 2021</div>			
-										<h3><a href="#">Reading books always makes the moments happy</a></h3>
+										<div class="meta-date"></div>			
+										<h3><a href="#">Analysis And Design of Algorithms</a></h3>
 
 										<div class="links-element">
 											<div class="categories">inspiration</div>
@@ -351,8 +316,8 @@
 										</a>
 									</figure>
 									<div class="post-item">		
-										<div class="meta-date">Feb 27, 2021</div>			
-										<h3><a href="#">Reading books always makes the moments happy</a></h3>
+										<div class="meta-date"></div>			
+										<h3><a href="#">Engineering Mathematics</a></h3>
 
 										<div class="links-element">
 											<div class="categories">inspiration</div>

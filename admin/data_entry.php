@@ -1,6 +1,8 @@
-<!-- AShish -->
-<!-- This is second comment
- --><?php
+<!-- this is from suamn branch  -->
+
+<?php
+
+
 session_start();
 
 if (!isset($_SESSION['fullname'])) {
@@ -9,15 +11,12 @@ if (!isset($_SESSION['fullname'])) {
 }
 ?>
 
+
 <?php
 include('includes/header.php');
 include('includes/navbar.php');
 include('includes/links/links.php');
-
 include('connection.inc.php');
-
-
-
 ?>
 
 <main id="main">
