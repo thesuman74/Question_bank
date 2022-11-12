@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 05, 2022 at 08:05 AM
+-- Generation Time: Nov 12, 2022 at 07:39 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `world`
+-- Database: `gces_project_1`
 --
 
 -- --------------------------------------------------------
@@ -47950,8 +47950,7 @@ CREATE TABLE `courses` (
 
 INSERT INTO `courses` (`id`, `name`) VALUES
 (101, 'computer'),
-(102, 'software'),
-(277, 'electrical');
+(102, 'software');
 
 -- --------------------------------------------------------
 
@@ -47992,9 +47991,20 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`id`, `course`, `semester`, `subject`, `link`, `file`) VALUES
-(1, 'computer', 'I', 'computer-first sem ', 'link', 'Screenshot (42).png'),
-(2, 'software', 'II', 'software-second sem ', 'link', ''),
-(3, 'electrical', 'I', 'electrical-first sem ', 'link', 'Screenshot (40).png');
+(1, 'computer', 'I', 'computer-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(2, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(3, 'electrical', 'I', 'electrical-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (40).png'),
+(4, 'computer', 'I', 'computer-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(5, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(6, 'electrical', 'I', 'electrical-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (40).png'),
+(7, 'computer', 'I', 'computer-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(8, 'electrical', 'I', 'electrical-first sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (40).png'),
+(9, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(10, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(11, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(12, 'software', 'II', 'software-second sem ', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', 'Screenshot (42).png'),
+(13, 'software', 'I', 'Engineering Mathematics-I	', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', '2226455.jpg'),
+(14, 'software', 'I', 'Engineering Mathematics-I	', 'https://drive.google.com/file/d/1_fNfCvL73wYLLpllFMjQoX8XJIoknhxg/preview', '2226455.jpg');
 
 -- --------------------------------------------------------
 
@@ -50164,7 +50174,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `states`
